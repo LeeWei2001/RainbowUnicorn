@@ -73,7 +73,7 @@ public class runebutton : MonoBehaviour
                 e += 1;
             }
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        /*if (Input.GetKeyDown(KeyCode.Q))
         {
             Invoke("OnShow", 0);
         }
@@ -84,10 +84,10 @@ public class runebutton : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && playingarea.card == 0)
         {
             Invoke("OnShowe", 0);
-        }
+        }*/
 
     }
-    public void OnShow()//定義一個點擊按妞觸發的方法
+    /*public void OnShow()//定義一個點擊按妞觸發的方法
     {
         if (q > 0)
         {
@@ -110,5 +110,5 @@ public class runebutton : MonoBehaviour
             e -= 1;
         }
 
-    }//特殊
+    }//特殊*/
 }

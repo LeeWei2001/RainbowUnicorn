@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{01581593-00CC-05E8-4BB5-DE9370206819}</ProjectGuid>
+    <ProjectGuid>{79A071C9-C67B-D283-17DF-875B87E10FB7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -52,6 +52,9 @@
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="D:\Visual Studio 2019\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\MoonSharp\Interpreter\Tree\Statements\WhileStatement.cs" />
     <Compile Include="Assets\Fungus\Scripts\Commands\SaveVariable.cs" />
@@ -657,6 +660,7 @@
     <Compile Include="Assets\Fungus\Scripts\Utils\PortraitUtils.cs" />
     <Compile Include="Assets\Fungus\Scripts\Commands\MoveToView.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\CloudShadowsURP\Scripts\SetShaderGlobalVars.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\MoonSharp\Interpreter\Execution\VM\Processor\Processor_IExecutionContext.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\MoonSharp\Interpreter\NameSpace_XmlHelp.cs" />
     <Compile Include="Assets\Fungus\Scripts\Commands\Comment.cs" />
@@ -773,7 +777,6 @@
     <Compile Include="Assets\DraggingActionsTest.cs" />
     <Compile Include="Assets\library.cs" />
     <Compile Include="Assets\Fungus\Scripts\EventHandlers\ObjectClicked.cs" />
-    <Compile Include="Assets\CloudShadowsURP\Scripts\SetShaderGlobalVars.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMPro.cginc" />
@@ -1398,43 +1401,43 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Shaders.csproj">
-      <Project>{7E8BEC6A-5FDE-164C-9AEF-51711E6DC3DB}</Project>
+      <Project>{C6FB7960-5251-F159-7CB7-305A57F17FCE}</Project>
       <Name>Unity.RenderPipelines.Universal.Shaders</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.csproj">
-      <Project>{8C062032-4A0E-F7DD-A289-79A549A08987}</Project>
+      <Project>{EB3D9FBB-E8D3-217F-782A-40062861E692}</Project>
       <Name>Unity.RenderPipelines.Universal.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualEffectGraph.Runtime.csproj">
-      <Project>{40BB49A3-9681-0593-C6E4-F2231E93BFD7}</Project>
+      <Project>{7F84461E-508D-BECB-14FD-44625B8C0467}</Project>
       <Name>Unity.VisualEffectGraph.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{AA71CFAB-420E-E867-0666-4F0F82B56279}</Project>
+      <Project>{067EA31F-8F30-9B4C-9C30-F8837E5C328E}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{3375ABF2-BCB5-BC3F-D583-0FE77C66C37C}</Project>
+      <Project>{6BC90DC1-C7C1-1750-A8E9-B0CEDC1BA788}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
-      <Project>{F26FAA5B-A26E-6BF8-07B2-FF7D37E8C3C2}</Project>
+      <Project>{BEDA5C8C-CDDE-3DA8-7859-0F89D61B0C1B}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.ShaderLibrary.csproj">
-      <Project>{FBEFC7E7-DC3A-9401-EB29-9E896F8A49B2}</Project>
+      <Project>{30FEA6B5-DE0C-B8C2-CBEB-138181786122}</Project>
       <Name>Unity.RenderPipelines.Core.ShaderLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{F3E1D955-3AEC-9B08-AE6D-867DCA9DF752}</Project>
+      <Project>{EA9C2342-536E-D9BA-D2DC-80BEEC15C7F2}</Project>
       <Name>Unity.Mathematics</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipeline.Universal.ShaderLibrary.csproj">
-      <Project>{27FBFEC4-706F-6B4A-0FC5-1C4ECC06A8BC}</Project>
+      <Project>{A4BC3FFA-18C5-7E3F-8EB6-A738BC166429}</Project>
       <Name>Unity.RenderPipeline.Universal.ShaderLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.csproj">
-      <Project>{5CCD1B37-A3D9-EDEF-393C-731D45F936AC}</Project>
+      <Project>{7B951FE4-7794-DEE9-F50B-66BE7C2DAF13}</Project>
       <Name>Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary</Name>
     </ProjectReference>
   </ItemGroup>

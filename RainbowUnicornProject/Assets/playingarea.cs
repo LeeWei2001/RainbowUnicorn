@@ -30,18 +30,22 @@ public class playingarea: MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && runebutton.q > 0)
+        if (Input.GetKeyDown(KeyCode.Q) /*&& runebutton.q > 0*/)
         {
-            Invoke("act", 0);
+            /*CancelInvoke("spe")*/
+            CancelInvoke("def");
+            InvokeRepeating("act", 0,3);
         }
-        if (Input.GetKeyDown(KeyCode.W) && runebutton.w > 0)
+        if (Input.GetKeyDown(KeyCode.W) /*&& runebutton.w > 0*/)
         {
-            Invoke("def", 0);
+            CancelInvoke("act");/* CancelInvoke("spe");*/
+            InvokeRepeating("def", 0,3);
         }
-        if (Input.GetKeyDown(KeyCode.E) && runebutton.e > 0 && card == 0)
+        /*if (Input.GetKeyDown(KeyCode.E) && runebutton.e > 0 && card == 0)
         {
-            Invoke("spe", 0);
-        }
+            CancelInvoke("act"); CancelInvoke("def");
+            InvokeRepeating("spe", 0,2);
+        }*/
 
         if (card == 3)
         {
